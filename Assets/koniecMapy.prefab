@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 775136122132592372}
   - component: {fileID: 7631413526033982153}
   m_Layer: 0
-  m_Name: EdgeOfTheMap
+  m_Name: koniecMapy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
