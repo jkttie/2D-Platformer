@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.Hierarchy;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -16,12 +17,24 @@ public class PlayerHealth : MonoBehaviour
     public delegate void HealthInitializer(float newHealth);
     public event HealthInitializer OnHealthInitialized;
 
+    private string gameOverScene = "GameFail";
+
     void Start()
     {
         health = MaxHealth;
         OnHealthInitialized?.Invoke(health);
     }
-
+    void Update()
+    {
+        if (health <= 0)
+        {
+            Die();
+        }
+    void Die()
+    {
+        SceneManager.LoadScene(gameOverScene);
+    }
+    }
     public void AddDamage(float damage)
     {
         if (canReciveDamage)
