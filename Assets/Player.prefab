@@ -278,8 +278,8 @@ MonoBehaviour:
   speed: 10
   jumpForce: 4
   maxJumpCount: 2
-  dashForce: 30
-  dashTime: 0.5
+  dashForce: 15
+  dashTime: 0.2
 --- !u!50 &2816861342751533365
 Rigidbody2D:
   serializedVersion: 5

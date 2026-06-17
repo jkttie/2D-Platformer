@@ -6,7 +6,6 @@ public class SceneOppener : MonoBehaviour
     public string sceneName;
     public void OpenScene()
     {
-       SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
-
- }
+}
